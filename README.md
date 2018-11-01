@@ -1,4 +1,4 @@
-# 20774A: 20774 Perform Cloud Data Science with Azure Machine Learning
+# 20774A: Perform Cloud Data Science with Azure Machine Learning
 
 ## What are we doing?
 
