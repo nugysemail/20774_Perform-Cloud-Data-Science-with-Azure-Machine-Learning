@@ -1,39 +1,6 @@
 # 20774A: Perform Cloud Data Science with Azure Machine Learning
 
-## Virtual Machine Environment
-
-This section provides the information for setting up the classroom environment to support the business scenario of the course.
-
-## Virtual Machine Configuration
-
-In this course, you will use Microsoft® Hyper-V™ to perform the labs.
-
-The following shows the role of each virtual machine that is used in this course:
--  **20774A-LON-DC**: LON-DC1 is a domain controller.
--  **20774A-LON-DEV**: LON-DEV provides the main development. It runs Microsoft Office 2016, PowerBI Desktop, SQL tools, Storage Explorer, Azure CLI Tools, Azure PowerShell, Visual Studio, R client and has R tools installed.
--  **20774A-LON-SQLR**: LON-SQLR runs SQL Server 2016 and R Server. 
--  **MT17B-WS2016-NAT**: WS2016-NAT provides access to the Internet
-
-## Software Configuration
-
-The following software is installed on the virtual machines:
--  Microsoft R Server  - 9.0.1, 64 bit
--  Visual Studio 2015 Enterprise Edition
--  Microsoft R Open 3.3.2
--  Microsoft R Client
--  Microsoft SQL Server 2016 (64-bit)
--  Microsoft SQL Server Management Studio - 16.5.3
--  Microsoft Office 2016
--  Power BI Desktop
--  Storage Explorer
--  Azure CLI Tools
--  Azure PowerShell
-
-## Course Files
-
-The files associated with the labs in this course are located in the **E:\Labfiles** folder on the **20774A-LON-DEV** virtual machine.
-
-## Classroom Setup
+## Virtual Machine Setup
 
 All students and the instructor must perform the following tasks prior to commencing module 1:
 
