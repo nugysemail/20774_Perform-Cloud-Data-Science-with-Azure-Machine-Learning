@@ -1,3 +1,4 @@
+
 # Download the movie ratings and IMDB movie titles from the sample datasets collection
 library("AzureML")
 ws <- workspace()
@@ -16,9 +17,9 @@ head(movieData)
 library(dplyr)
 
 select(movieData, MovieId, Movie.Name, Rating) %>%
-  group_by(Movie.Name) %>%
-  summarize("MeanRating" = mean(Rating)) %>%
-  arrange(desc(MeanRating))
+  group_by("Movie ID" = MovieId, "Movie Name" = Movie.Name) %>%
+  summarize(Rating = mean(Rating)) %>%
+  arrange(desc(Rating))
 
 # Install the lubridate and xts packages
 install.packages("lubridate")
@@ -41,7 +42,8 @@ head(ratingsPerDay)
 install.packages("broom")
 library(broom)
 
-install.packages("ggplot2")
+require(devtools)
+install_version("ggplot2", version = "2.2.1", repos = "http://cran.us.r-project.org")
 library(ggplot2)
 
 # Step 3: Graph the results
@@ -54,5 +56,3 @@ ggplot(graphData, aes(x = index, y = value)) +
   xlab("Date") +
   ylab("Number of Ratings") +
   geom_line(color = "blue")
-
-
